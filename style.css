@@ -64,7 +64,7 @@ header{
         color:var(--color1);
         padding: 10px;
         border-radius: 20px;
-        transform: scale(0.8);
+        transform: scale(0.9);
        }
 
        .icone1{
@@ -75,6 +75,7 @@ header{
         height: 40px;
 
        }
+       
        #first-section{
 background: url("./photo2/bg-home.jpg") center;
 width: 100%;
@@ -115,20 +116,22 @@ font-size: 2.7rem;
         height: 150px;
         align-items: center;
         margin: 0 auto;
+
         padding-bottom: 10px;
         background-color: var(--color1);
         border-radius: 8px;
+        
     }
     .container-formulaire1{
         width: 100%;
         display: flex;
         justify-content: space-around;
-       
+       padding-bottom: 0px;
         padding-top: 30px;
         margin: 20px;
 
     }
-    textarea{
+    /* textarea{
         resize: none;
         height: 50px;
         width: 100%;
@@ -145,15 +148,17 @@ font-size: 2.7rem;
         color: var(--color1);
         margin: 0 auto;
 
-    }
+    } */
    form input[type="text"]{
     padding: 10px;
     border-radius: 5px;
+    font-size: 1rem;
     border:1px solid  var(--color2);
    }
    form input[type="date"]{
     padding: 10px;
     border-radius: 5px;
+    padding: 10px;
     border:1px solid  var(--color2);
    }
    form label{
@@ -163,7 +168,8 @@ font-size: 2.7rem;
    }
    #second-section{
     width: 100%;
-    /* height: 80vh; */
+    
+   
    }
    .title-h2{
     padding-top: 40px;
@@ -198,9 +204,11 @@ font-size: 2.7rem;
    }
    .child_location h3{
     font-size: 1rem;
+    text-align: center;
    }
   
    .prestations{
+    padding-top: 19px;
     text-align: center;
     color:var(--color3);
     font-weight: 200;
@@ -209,6 +217,7 @@ font-size: 2.7rem;
    .decouverte{
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 19px;
     font-size: 1.5rem;
    }
    .father-car{
@@ -288,7 +297,7 @@ border-radius: 10px;
     color:var(--color1);
     width: 40%;
     display: flex;
-    box-shadow: 0px 3px 5px var(--color3);
+    box-shadow: 0px 3px 1px var(--color3);
     margin: 15px auto;
     font-weight: 100;
     text-transform:capitalize ;
@@ -331,6 +340,8 @@ border-radius: 10px;
 
    .avis-img{
 width: 100px;
+margin: 0 auto;
+display: flex;
 height: 100px;
 
 border-radius: 50%;
@@ -401,5 +412,55 @@ border-radius: 50%;
    footer{
     padding-left: 30px;
    }
-  
+   .savoir-plus{
+    width: 100%;
+    padding-right: 5px;
+   }
+  .father-temoignage{
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  .father-temoignage div{
+    width: 100%;
+  }
+  .father-car{
+    gap: 30px;
+    flex-direction: column;
+  }
+  .child_car{
+    width: 100%;
+  }
+  form{
+    height: 200px;
+    /* background-color: blueviolet; */
+   /* height: auto; */
+   /* padding-top: 10px; */
+}
+.container-formulaire1{
+    flex-wrap:wrap ;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    gap: 10px;
+  }
+  #first-section{
+    height: 120vh;
+  }
+  .none{
+    display: none;
+  }
+  .child-footer{
+    flex-direction: column;
+  }
+  .child-footer div{
+    width: 100%;
+    text-align: center;
+  }
+  .child-footer div:nth-child(3){
+    padding-top: 10px;
+  }
+  .child-footer div:nth-child(2){
+    padding-top: 10px;
+  }
 }
