@@ -236,6 +236,7 @@ font-size: 2.7rem;
     }
     .child_car h5{
         transition: 1s ease-in-out;
+        cursor: pointer;
     }
     .child_car h5:hover{
 background-color: var(--color2);
@@ -400,6 +401,12 @@ border-radius: 50%;
 .child-footer{
     display: flex;
     justify-content: space-around;
+}
+.avis-img{
+  transition: 1s ease-in-out;
+}
+.avis-img:hover{
+  transform: rotateY(180deg);
 }
 @media screen and (max-width:700px) {
    .location{
