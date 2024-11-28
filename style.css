@@ -3,7 +3,7 @@
     --color2:black;
     --color3:orange;
 }
-*{
+*, ::after, ::before{
     padding: 0;
     margin: 0;
  
