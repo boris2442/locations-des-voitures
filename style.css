@@ -389,12 +389,16 @@ border-radius: 50%;
     color:var(--color3);
  }
  footer p{
+  line-height: 30px;
+  text-align: center;
     color:var(--color1);
  }
  footer h3{
     color:var(--color1);
     text-align: center;
+    font-size: 1.2rem;
     padding-top: 30px;
+    padding-bottom: 30px;
     font-weight: 100;
  }
 .child-footer{
@@ -439,10 +443,7 @@ border-radius: 50%;
   }
   form{
     height: 200px;
-    /* background-color: blueviolet; */
-   /* height: auto; */
-   /* padding-top: 10px; */
-}
+  }
 .container-formulaire1{
     flex-wrap:wrap ;
     height: auto;
@@ -468,5 +469,10 @@ border-radius: 50%;
   }
   .child-footer div:nth-child(2){
     padding-top: 10px;
+  }
+  .none2{
+    font-family: "Parisienne", serif;
+  font-weight: 400;
+  font-style: normal;
   }
 }
