@@ -580,11 +580,16 @@ border-radius: 50%;
 }
 .container-prestations .images img{
 height: 90%;
+cursor: pointer;
 width: 100%;
+transition: 1s ease-in-out;
 object-fit: cover;
 object-position: center;
 margin-bottom: 25px;
 border-radius: 7px;
+}
+.container-prestations .images img:hover{
+  transform: rotateY(360deg);
 }
 .container-box .annee{
   background-color: var(--color3);
@@ -596,6 +601,27 @@ margin-bottom: 10px;
 }
 
 .container-box .prix{
-  padding-top: 0px;
+  padding: 20px;
+  padding-top: 3px;
+  padding-left: 5px;
+  color:var(--color3);
   display: inline-block;
+}
+.container-box h5{
+  border: none;
+  font-size: 1.2rem;
+  text-align:left;
+  color:var(--color2);
+}
+.container-box button{
+  width: 100%;
+  margin: 0;
+ 
+  background-color: var(--color3);
+  color:var(--color1);
+}
+.container-box button:hover{
+  background-color:orangered;
+  transition: background 0.5s ease-in-out;
+  border-radius: 5px;
 }
