@@ -567,16 +567,35 @@ border-radius: 50%;
   margin-top: 2rem;
   gap: 1rem;
   margin: 0 auto;
+  background-color:var(--color1) ;
   width: 90%;
   padding-left: 30px;
   padding-right: 30px;
 }
-container-box{
-  /* position: relative; */
+.container-box{
+ border-radius: 7px;
+ padding: 10px;
+ box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
 
 }
 .container-prestations .images img{
-
+height: 90%;
 width: 100%;
+object-fit: cover;
+object-position: center;
+margin-bottom: 25px;
 border-radius: 7px;
+}
+.container-box .annee{
+  background-color: var(--color3);
+  padding: 5px 15px;
+  color:var(--color1);
+margin-bottom: 10px;
+/* width: 100px; */
+  border-radius: 20px;
+}
+
+.container-box .prix{
+  padding-top: 0px;
+  display: inline-block;
 }
