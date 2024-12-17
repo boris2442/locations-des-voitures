@@ -273,6 +273,37 @@ border-radius: 10px;
    .child_car img:hover{
   transform: rotateY(180deg);
    }
+
+
+/* section comment sa marche */
+.cars-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.cars-container .box-car{
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  transition: background 1s ease-in-out;
+ background: red;
+}
+
+.cars-container .box-car::after{
+  
+}
+
+
+
+
+
+
+
+
+
+
    #section-fourth{
     padding-top: 20px;
    }
