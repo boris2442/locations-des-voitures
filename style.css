@@ -555,3 +555,28 @@ border-radius: 50%;
   font-style: normal;
   }
 }
+
+
+
+
+/* section prestations */
+.container-prestations{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 90%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+container-box{
+  /* position: relative; */
+
+}
+.container-prestations .images img{
+
+width: 100%;
+border-radius: 7px;
+}
