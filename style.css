@@ -468,12 +468,14 @@ border-radius: 50%;
  footer p{
   line-height: 30px;
   text-align: center;
+
     color:var(--color1);
  }
  footer h3{
     color:var(--color1);
     text-align: center;
     font-size: 1.2rem;
+    font-family:'Parkinsans';
     padding-top: 30px;
     padding-bottom: 30px;
     font-weight: 100;
