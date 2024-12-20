@@ -16,6 +16,7 @@
 
 // console.log("hey");
 const app = document.getElementById("title");
+const app2=document.getElementById("titre2");
 
 const typewriter = new Typewriter(app, {
   loop: true,
@@ -27,3 +28,19 @@ typewriter
   .pauseFor(2000)
   .deleteAll()
   .start();
+
+
+  const typewriter2 = new Typewriter(app2,{
+  loop:true,
+  delay:100,
+
+
+  })
+
+  typewriter2
+  .typeString("Location de voiture simplifiée !")
+  .pauseFor(2000)
+  .deleteAll()
+  .start();
+
+  startTypewriterLoop();
