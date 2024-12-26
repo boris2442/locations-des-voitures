@@ -73,7 +73,7 @@ const sr=ScrollReveal({
   distance:"30px",
   reset:true
 })
-sr.reveal(".copy, .first-section, .cars, .third-section, .section-fourth, .sixth-section, .fifth-section, .child-footer ", {interval:200})
+sr.reveal(".copy, .first-section, .cars, .third-section, .section-fourth, .sixth-section, .fifth-section, .child-footer, .et-a-decouvrir ", {interval:200})
 
 
 
