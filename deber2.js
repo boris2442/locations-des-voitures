@@ -74,3 +74,32 @@ const sr=ScrollReveal({
   reset:true
 })
 sr.reveal(".copy, .first-section, .cars, .third-section, .section-fourth, .sixth-section, .fifth-section, .child-footer ", {interval:200})
+
+
+
+// partie destinee au swiper
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay:{
+    disableOnInteraction: false, 
+},
+speed:500,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

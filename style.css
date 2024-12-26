@@ -35,15 +35,33 @@ header{
     box-shadow: 0px 3px 5px var(--color3);
     position: fixed;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
    background-color: var(--color1);
 }
        header ul{
         display: flex;
         margin: 0 auto;
         align-items: center;
-        justify-content: space-between;
+        gap:30px;
+        justify-content: start;
+        /* justify-content: space-between; */
         padding-left: 0;
         padding-top: 15px;
+       }
+       header div{
+        display: flex;
+        align-items: center;
+        gap:30px;
+       }
+       header div i{
+        font-size: 1.6rem;
+        display: none;
+        cursor: pointer;
+       }
+       header div i:hover{
+        transition: .5s ease-in-out;
+        color:var(--color3);
        }
        header ul li{
         align-items: center;
@@ -65,7 +83,7 @@ header{
         left: 0;
         background-color: var(--color3);
         height: 2px;
-        width: 100%;
+        width: 0%;
         position: absolute;
         color:var(--color3);
        }
@@ -73,17 +91,14 @@ header{
         content:"";
         background-color: var(--color3);
       height: 2px;
-       width: 100%;
+       width: 0%;
        bottom: 0;
        position: absolute;
       color:var(--color3);
        }
-       header ul li a:hover{
-        background-color: var(--color2);
-        color:var(--color1);
-        padding: 10px;
-        border-radius: 20px;
-        transform: scale(0.9);
+       header ul li a:hover::after, header ul li a:hover::before{
+       width: 100%;
+       transition: .5s ease-in-out;
        }
 
        .icone1{
@@ -94,7 +109,9 @@ header{
         height: 40px;
 
        }
-       
+       header div .bars{
+        color:red;
+       }
        #first-section{
 background: url("./photo2/bg-home.jpg") center;
 width: 100%;
@@ -539,9 +556,7 @@ border-radius: 50%;
   #first-section{
     height: 120vh;
   }
-  .none{
-    display: none;
-  }
+ 
   .child-footer{
     flex-direction: column;
   }
@@ -630,4 +645,34 @@ margin-bottom: 10px;
   background-color:orangered;
   transition: background 0.5s ease-in-out;
   border-radius: 5px;
+}
+
+
+
+/* partie swiper style */
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.et-a-decouvrir{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img{
+  object-fit: cover; 
+   object-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
