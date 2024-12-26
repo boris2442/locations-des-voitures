@@ -8,8 +8,9 @@
     margin: 0;
  text-decoration: none;
  scroll-behavior: smooth;
+ list-style: none;
     box-sizing: border-box;
-   font-family:'Parkinsans' ; 
+   font-family:'Parkinsans', Arial, Helvetica, sans-serif ; 
 }
 img{
   transition: .2s ease-in-out;
@@ -56,7 +57,7 @@ header{
        }
        header div i{
         font-size: 1.6rem;
-        display: none;
+        /* display: none; */
         cursor: pointer;
        }
        header div i:hover{
@@ -65,7 +66,7 @@ header{
        }
        header ul li{
         align-items: center;
-        list-style-type: none;
+      
      
        }
       
@@ -73,7 +74,7 @@ header{
        header ul li a{
         position: relative;
         text-transform: capitalize;
-        text-decoration: none;
+     
         color:var(--color2);
         transition: 1s ease-in-out;
         font-size:1.5rem;
@@ -375,15 +376,24 @@ left:-0.2rem;
    }
    .father-history{
     display: grid;
-    gap:20px;
-    grid-template-columns: 1fr 1fr;
+    gap:50px;
+    min-height: 100vh;
+    /* flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: 1fr 1fr; */
+   }
+   .father-history p{
+    height: 200px;
+    overflow: auto;
    }
    .father-history div img{
     width: 100%;
    
    }
    .savoir-plus{
-    text-decoration: none;
+    
     color:var(--color1);
     width: 40%;
     display: flex;
@@ -408,7 +418,7 @@ left:-0.2rem;
    }
    @keyframes savoir-anim{
     0%{
-      transform: translateY(70px);
+      transform: translateY(30px);
       box-shadow: 0px 10px 9px var(--color3);
     }
    }
@@ -645,12 +655,24 @@ margin-bottom: 10px;
   border-radius: 5px;
 }
 
-
+@media screen and (max-width:500px){
+  #section-fourth .father-history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  #section-fourth .father-history img{
+    width: 400px;
+    height: auto;
+  }
+}
 
 /* partie swiper style */
 
 .swiper {
-  width: 600px;
+  max-width: 600px;
   height: 300px;
 }
 .et-a-decouvrir{
