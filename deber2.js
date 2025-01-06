@@ -1,20 +1,4 @@
-// const app=document.getElementById("typewriter");
 
-// const typewriter= new Typewriter(app, {
-//     loop:true,
-//     delay:100,
-// });
-// const type = new Typewriter(app, {
-//     loop: true,
-//     delay: 75,
-//   });
-// type
-// .typeString("Roulez avec de l'experience")
-// .pauseFor(2000)
-// .deleteAll()
-// .start();
-
-// console.log("hey");
 const app = document.getElementById("title");
 const app2=document.getElementById("titre2");
 
@@ -22,12 +6,6 @@ const typewriter = new Typewriter(app, {
   loop: true,
   delay: 50,
 });
-
-// typewriter
-//   .typeString("Roulez avec de l'expérience")
-//   .pauseFor(2000)
-//   .deleteAll()
-//   .start();
 
 
   const typewriter2 = new Typewriter(app2,{
@@ -37,13 +15,7 @@ const typewriter = new Typewriter(app, {
 
   })
 
-  // typewriter2
-  // .typeString("Location de voiture simplifiée !")
-  // .pauseFor(2000)
-  // .deleteAll()
-  // .start();
-
-  // startTypewriterLoop();
+ 
 function startTypewriterLoop(){
 
   typewriter
@@ -103,3 +75,24 @@ speed:500,
     el: '.swiper-scrollbar',
   },
 });
+
+
+const sections=document.querySelectorAll("section");
+const links=document.querySelectorAll("header ul li a");
+
+const activeLink = () =>{
+sections.forEach(section=>{
+  let top=section.offsetTop;
+  let height=section.offsetHeight;
+  let scrolls=window.scrollY;
+  let id=section.getAttribute("id")
+  if(scrolls>=top - 400 && scrolls<top + height){
+links.forEach(link=>{
+  link.classList.remove("active4")
+
+})
+  }
+})
+}
+
+window.addEventListener("scroll",activeLink  )
