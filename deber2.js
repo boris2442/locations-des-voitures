@@ -90,7 +90,9 @@ sections.forEach(section=>{
 links.forEach(link=>{
   link.classList.remove("active4")
 
-})
+});
+let recuperationId=document.querySelector(`header ul li a[href*=${id}`)
+recuperationId.classList.add("active4")
   }
 })
 }
