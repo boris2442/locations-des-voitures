@@ -73,7 +73,7 @@ header{
         
        header ul li a{
         position: relative;
-        text-transform: capitalize;
+        text-transform: lowercase;
      
         color:var(--color2);
         transition: 1s ease-in-out;
