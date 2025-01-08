@@ -721,13 +721,13 @@ right: 20px;
     width: 350px;
     left: -100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    transition: .7s ease-in-out;
+    transition: 1s ease-in-out;
     border-bottom-right-radius: 70px;
    }
   .active{
     position: absolute;
     left: 0;
-    transition: .7s ease-in-out;
+    transition: 1s ease-in-out;
   }
 }
 
