@@ -692,7 +692,8 @@ margin-bottom: 10px;
 }
 
 .active4{
-  border-bottom: 2px solid var(--color3);
+  border: 2px dashed var(--color3);
+  padding: 7px;
 }
 
 header .menu-b{
@@ -703,9 +704,9 @@ header .menu-b{
     cursor: pointer;
     display: block;
     position: absolute;
- height: 50px;
- width: 50px;
-right: 20px;
+    height: 50px;
+    width: 50px;
+    right: 20px;
    }
    header ul{
     position: absolute;
