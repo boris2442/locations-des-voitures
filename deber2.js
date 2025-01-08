@@ -103,6 +103,10 @@ window.addEventListener("scroll",activeLink  );
 
 
 const burger=document.querySelector(".menu-b")
+const navigation=document.querySelector("header ul")
 burger.addEventListener("click",()=>{
-
+navigation.classList.toggle("active")
+})
+window.addEventListener("scroll", ()=>{
+  navigation.classList.remove("active")
 })

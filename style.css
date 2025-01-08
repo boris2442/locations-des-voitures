@@ -700,6 +700,7 @@ header .menu-b{
 }
 @media screen and (max-width:1040px){
   header .menu-b{
+    cursor: pointer;
     display: block;
     position: absolute;
  height: 50px;
@@ -709,6 +710,7 @@ right: 20px;
    header ul{
     position: absolute;
     display: flex;
+    top:16vh;
     gap: 15px;
     background-color: var(--color1);
     flex-direction: column;
@@ -719,6 +721,7 @@ right: 20px;
     width: 350px;
     left: -100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: .7s ease-in-out;
     border-bottom-right-radius: 70px;
    }
   .active{
@@ -727,3 +730,4 @@ right: 20px;
     transition: .7s ease-in-out;
   }
 }
+
