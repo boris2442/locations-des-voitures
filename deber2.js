@@ -97,4 +97,12 @@ recuperationId.classList.add("active4")
 })
 }
 
-window.addEventListener("scroll",activeLink  )
+window.addEventListener("scroll",activeLink  );
+
+// partie du code menu burger
+
+
+const burger=document.querySelector(".menu-b")
+burger.addEventListener("click",()=>{
+
+})

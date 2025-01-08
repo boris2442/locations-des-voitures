@@ -55,15 +55,15 @@ header{
         align-items: center;
         gap:30px;
        }
-       header div i{
+       /* header div i{
         font-size: 1.6rem;
-        /* display: none; */
+     
         cursor: pointer;
-       }
-       header div i:hover{
+       } */
+       /* header div i:hover{
         transition: .5s ease-in-out;
         color:var(--color3);
-       }
+       } */
        header ul li{
         align-items: center;
       
@@ -105,8 +105,11 @@ header{
        .icone1{
         background-color: var(--color3);
         border-radius: 50%;
-        
-       width: 40px;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: 30px;
+        width: 40px;
         height: 40px;
 
        }
@@ -311,7 +314,7 @@ border-radius: 10px;
   position: relative;
   background-color: #fff;
   transition: background 1s ease-in-out;
- /* background: red; */
+
 }
 
 
@@ -325,7 +328,7 @@ border-radius: 10px;
   z-index: -2;
   position: absolute;
   transition: width 0.2s ease-in-out;
-  /* border-radius: 50%; */
+
   
   background-color: var(--color3);
 }
@@ -350,13 +353,6 @@ left:-0.2rem;
   background-color: rgb(243, 173, 148);
 }
 
-
-
-
-
-
-
-
    #section-fourth{
     padding-top: 20px;
    }
@@ -378,11 +374,9 @@ left:-0.2rem;
     display: grid;
     gap:50px;
     min-height: 100vh;
-    /* flex-wrap: wrap;
-    justify-content: space-around;
-    display: flex; */
+  
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* grid-template-columns: 1fr 1fr; */
+    
    }
    .father-history p{
     height: 200px;
@@ -625,7 +619,7 @@ border-radius: 7px;
   padding: 5px 15px;
   color:var(--color1);
 margin-bottom: 10px;
-/* width: 100px; */
+
   border-radius: 20px;
 }
 
@@ -699,4 +693,37 @@ margin-bottom: 10px;
 
 .active4{
   border-bottom: 2px solid var(--color3);
+}
+
+header .menu-b{
+ display: none;
+}
+@media screen and (max-width:1040px){
+  header .menu-b{
+    display: block;
+    position: absolute;
+ height: 50px;
+ width: 50px;
+right: 20px;
+   }
+   header ul{
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    background-color: var(--color1);
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 470px;
+    width: 350px;
+    left: -100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-bottom-right-radius: 70px;
+   }
+  .active{
+    position: absolute;
+    left: 0;
+    transition: .7s ease-in-out;
+  }
 }
