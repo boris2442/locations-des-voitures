@@ -8,6 +8,7 @@
     margin: 0;
  text-decoration: none;
  scroll-behavior: smooth;
+ outline:none;
  list-style: none;
     box-sizing: border-box;
    font-family:'Parkinsans', Arial, Helvetica, sans-serif ; 
